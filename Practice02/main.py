@@ -1,4 +1,4 @@
-from Practice02.functions import enter_data, converter, calculator
+from functions import enter_data, converter, calculator
 
 # 8, 10, 50, 5, 2, 39.413
 data = enter_data()

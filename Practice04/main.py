@@ -1,15 +1,16 @@
-from Practice04.calculation import mat_scal_mul, mat_mat_mul
+from calculation import mat_scal_mul, mat_mat_mul
 import time
 import pickle
+import os
 
 
+os.system('generator.py')
 filename = "datafile.txt"
 
 
 D_2 = []
 with open(filename, "rb") as fh:
-    D_2  = pickle.load(fh)
-
+    D_2 = pickle.load(fh)
 
 values = list(D_2.values())
 
@@ -28,5 +29,5 @@ mat_temp2 = mat_scal_mul(beta, mat_c)
 mat_result = mat_temp1 + mat_temp2
 print(mat_result)
 print("--- %s seconds ---" % (time.time() - start_time))
-
+input("Press Enter")
 # --- 0.0009958744049072266 seconds ---

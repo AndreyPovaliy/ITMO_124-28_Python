@@ -48,8 +48,8 @@ while True:
             next_field[y][x] = check_cell(current_field, x, y)
 
     current_field = deepcopy(next_field)
-    img = ImageGrab.grab()
-    img.show()
+    # img = ImageGrab.grab()
+    # img.show()
 
     pygame.display.flip()
     clock.tick(FPS)

@@ -12,3 +12,4 @@ import functions
 
 
 functions.time_way(8, 10, 50, 5, 2, 39.413)
+input("Press Enter")
